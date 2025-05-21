@@ -1,10 +1,4 @@
-import data from "../data";
-
 function Footer(){
-	let {footer}=data;
-
-	// console.log(footer);
-
 	return(
 		<>
 			<div className="footer">
@@ -14,7 +8,6 @@ function Footer(){
 							<a href="">designdigit</a>
 						</div>
 						<div className="ft-info">
-							{/*
 							<p>
 								<span><strong>PHONE</strong>010-0000-0000</span>
 								<span><strong>MAIL</strong>designdigit@naver.com</span>
@@ -24,18 +17,6 @@ function Footer(){
 								<span><strong>PORTFOLIO</strong>https://designdigit.github.io/portfolio</span>
 							</p>
 							<p className="copyright">COPYRIGHT ⓒ 2024 Designdigit. ALL RIGHTS RESERVED.</p>
-							*/}
-
-							{
-								footer.info.map((d, i) =>
-									<p key={i+1}>
-										<span><strong>{d.label[0]}</strong>{d.label[1]}</span>
-										<span><strong>{d.description[0]}</strong>{d.description[1]}</span>
-									</p>
-								)
-							}
-
-							<p className="copyright">{footer.copyright}</p>
 						</div>
 					</div>
 					<div className="ft-right">

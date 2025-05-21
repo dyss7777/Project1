@@ -317,7 +317,7 @@ body {
 	width: 95%;
 	max-width: 1820px;
 }
-.main-slider .swiper-wrapper {
+.main-slider .swiper-container {
 	overflow: hidden;
 	border-radius: 10px;
 	animation: scaleUp 1s forwards;
@@ -367,7 +367,7 @@ body {
 .main-slider .scroll-down {
 	position: absolute;
 	left: 50%;
-	bottom: 50px;
+	bottom: 20px;
 	z-index: 1;
 	transform: translateX(-50%);
 }
@@ -625,16 +625,16 @@ body {
 	margin-bottom: 100px;
 	text-align: center;
 }
-.main-product .swiper-wrapper {
+.main-product .swiper-container .swiper-wrapper {
 	height: auto;
 }
-.main-product .swiper-wrapper .thumb {
+.main-product .swiper-container .thumb {
 	position: relative;
 	padding-bottom: 124%;
 	width: 100%;
 	height: 0;
 }
-.main-product .swiper-wrapper .thumb img {
+.main-product .swiper-container .thumb img {
 	position: absolute;
 	left: 0;
 	top: 0;
@@ -642,18 +642,18 @@ body {
 	height: 100%;
 	object-fit: cover;
 }
-.main-product .swiper-wrapper .desc {
+.main-product .swiper-container .desc {
 	padding: 30px 0;
 }
-.main-product .swiper-wrapper .desc .name {
+.main-product .swiper-container .desc .name {
 	line-height: 1.3;
 	font-size: 1.875em;
 	font-weight: 800;
 }
-.main-product .swiper-wrapper .desc p {
+.main-product .swiper-container .desc p {
 	margin-top: 10px;
 }
-.main-product .swiper-wrapper .desc .btn {
+.main-product .swiper-container .desc .btn {
 	display: inline-block;
 	margin-top: 30px;
 	padding: 14px 40px;
@@ -661,13 +661,10 @@ body {
 	border: 1px solid #ddd;
 	transition: ease 0.3s;
 }
-.main-product .swiper-wrapper .desc .btn:hover {
+.main-product .swiper-container .desc .btn:hover {
 	background-color: #143a00;
 	color: #fff;
 	border-color: #143a00;
-}
-.main-product .desc p span { /* added */
-	display: block;
 }
 
 @media only screen and (max-width: 768px) {
@@ -677,10 +674,10 @@ body {
 	.main-product .main-tit {
 		margin-bottom: 40px;
 	}
-	.main-product .swiper-wrapper .desc .name {
+	.main-product .swiper-container .desc .name {
 		font-size: 1.25em;
 	}
-	.main-product .swiper-wrapper .desc .btn {
+	.main-product .swiper-container .desc .btn {
 		padding: 10px 30px;
 		font-size: 0.8125em;
 	}
